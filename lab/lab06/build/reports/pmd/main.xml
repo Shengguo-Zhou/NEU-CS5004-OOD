@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-03-03T23:02:11.884">
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/Boat.java">
+<violation beginline="3" endline="9" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="problem1" class="Boat" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+Avoid short class names like Boat
+</violation>
+<violation beginline="5" endline="5" begincolumn="22" endcolumn="23" rule="ShortVariable" ruleset="Code Style" package="problem1" class="Boat" method="Boat" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like ID
+</violation>
+<violation beginline="5" endline="5" begincolumn="15" endcolumn="23" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Boat" method="Boat" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ID' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="39" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Boat" method="Boat" variable="maxSpeed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'maxSpeed' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="26" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Boat" method="Boat" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'speed' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="55" endcolumn="75" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Boat" method="Boat" variable="tripReport" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'tripReport' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="22" endcolumn="23" rule="FormalParameterNamingConventions" ruleset="Code Style" package="problem1" class="Boat" method="Boat" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'ID' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="22" endcolumn="23" rule="VariableNamingConventions" ruleset="Code Style" package="problem1" class="Boat" method="Boat" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'ID' starts with uppercase character.
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/Bus.java">
+<violation beginline="3" endline="9" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="problem1" class="Bus" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+Avoid short class names like Bus
+</violation>
+<violation beginline="5" endline="5" begincolumn="21" endcolumn="22" rule="ShortVariable" ruleset="Code Style" package="problem1" class="Bus" method="Bus" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like ID
+</violation>
+<violation beginline="5" endline="5" begincolumn="14" endcolumn="22" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Bus" method="Bus" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ID' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="38" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Bus" method="Bus" variable="maxSpeed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'maxSpeed' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="25" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Bus" method="Bus" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'speed' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="54" endcolumn="74" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Bus" method="Bus" variable="tripReport" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'tripReport' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="21" endcolumn="22" rule="FormalParameterNamingConventions" ruleset="Code Style" package="problem1" class="Bus" method="Bus" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'ID' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="21" endcolumn="22" rule="VariableNamingConventions" ruleset="Code Style" package="problem1" class="Bus" method="Bus" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'ID' starts with uppercase character.
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/Train.java">
+<violation beginline="5" endline="5" begincolumn="23" endcolumn="24" rule="ShortVariable" ruleset="Code Style" package="problem1" class="Train" method="Train" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like ID
+</violation>
+<violation beginline="5" endline="5" begincolumn="16" endcolumn="24" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Train" method="Train" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ID' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="40" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Train" method="Train" variable="maxSpeed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'maxSpeed' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="27" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Train" method="Train" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'speed' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="56" endcolumn="76" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Train" method="Train" variable="tripReport" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'tripReport' is not assigned and could be declared final
+</violation>
+<violation beginline="5" endline="5" begincolumn="23" endcolumn="24" rule="FormalParameterNamingConventions" ruleset="Code Style" package="problem1" class="Train" method="Train" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'ID' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="5" endline="5" begincolumn="23" endcolumn="24" rule="VariableNamingConventions" ruleset="Code Style" package="problem1" class="Train" method="Train" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'ID' starts with uppercase character.
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/TripReport.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="25" rule="UnnecessaryImport" ruleset="Code Style" package="problem1" class="TripReport" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.Objects'
+</violation>
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="25" rule="UnusedImports" ruleset="Best Practices" package="problem1" class="TripReport" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.util.Objects'
+</violation>
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="21" rule="UnusedPrivateField" ruleset="Best Practices" package="problem1" class="TripReport" variable="kind" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'kind'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="21" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="TripReport" variable="kind" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="7" endline="7" begincolumn="17" endcolumn="21" rule="UnusedPrivateField" ruleset="Best Practices" package="problem1" class="TripReport" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'speed'.
+</violation>
+<violation beginline="7" endline="7" begincolumn="17" endcolumn="21" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="TripReport" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="8" endline="8" begincolumn="17" endcolumn="24" rule="UnusedPrivateField" ruleset="Best Practices" package="problem1" class="TripReport" variable="distance" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'distance'.
+</violation>
+<violation beginline="8" endline="8" begincolumn="17" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="TripReport" variable="distance" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="9" endline="9" begincolumn="19" endcolumn="22" rule="UnusedPrivateField" ruleset="Best Practices" package="problem1" class="TripReport" variable="trip" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'trip'.
+</violation>
+<violation beginline="9" endline="9" begincolumn="19" endcolumn="22" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="TripReport" variable="trip" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="11" endline="11" begincolumn="47" endcolumn="60" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="TripReport" method="TripReport" variable="distance" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'distance' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="21" endcolumn="31" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="TripReport" method="TripReport" variable="kind" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'kind' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="34" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="TripReport" method="TripReport" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'speed' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="63" endcolumn="74" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="TripReport" method="TripReport" variable="trip" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'trip' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/Vehicle.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="25" rule="UnnecessaryImport" ruleset="Code Style" package="problem1" class="Vehicle" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.Objects'
+</violation>
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="25" rule="UnusedImports" ruleset="Best Practices" package="problem1" class="Vehicle" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.util.Objects'
+</violation>
+<violation beginline="5" endline="38" begincolumn="17" endcolumn="1" rule="AbstractNaming" ruleset="Code Style" package="problem1" class="Vehicle" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#abstractnaming" priority="3">
+Abstract classes should be named AbstractXXX
+</violation>
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="19" rule="UnusedPrivateField" ruleset="Best Practices" package="problem1" class="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'ID'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="19" rule="ShortVariable" ruleset="Code Style" package="problem1" class="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like ID
+</violation>
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="19" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="19" rule="FieldNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'ID' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="6" endline="6" begincolumn="11" endcolumn="20" rule="SuspiciousConstantFieldName" ruleset="Code Style" package="problem1" class="Vehicle" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#suspiciousconstantfieldname" priority="3">
+The field name indicates a constant but its modifiers do not
+</violation>
+<violation beginline="6" endline="6" begincolumn="18" endcolumn="19" rule="VariableNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'ID' starts with uppercase character.
+</violation>
+<violation beginline="7" endline="7" begincolumn="17" endcolumn="21" rule="UnusedPrivateField" ruleset="Best Practices" package="problem1" class="Vehicle" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'speed'.
+</violation>
+<violation beginline="7" endline="7" begincolumn="17" endcolumn="21" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="Vehicle" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="8" endline="8" begincolumn="17" endcolumn="24" rule="UnusedPrivateField" ruleset="Best Practices" package="problem1" class="Vehicle" variable="maxSpeed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'maxSpeed'.
+</violation>
+<violation beginline="8" endline="8" begincolumn="17" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="Vehicle" variable="maxSpeed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="9" endline="9" begincolumn="22" endcolumn="31" rule="UnusedPrivateField" ruleset="Best Practices" package="problem1" class="Vehicle" variable="tripReport" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'tripReport'.
+</violation>
+<violation beginline="9" endline="9" begincolumn="22" endcolumn="31" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="Vehicle" variable="tripReport" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="11" endline="11" begincolumn="25" endcolumn="26" rule="ShortVariable" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like ID
+</violation>
+<violation beginline="11" endline="11" begincolumn="18" endcolumn="26" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ID' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="42" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="maxSpeed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'maxSpeed' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="29" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="speed" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'speed' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="58" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="tripReport" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'tripReport' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="25" endcolumn="26" rule="FormalParameterNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#formalparameternamingconventions" priority="1">
+The method parameter name 'ID' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="11" endline="11" begincolumn="25" endcolumn="26" rule="VariableNamingConventions" ruleset="Code Style" package="problem1" class="Vehicle" method="Vehicle" variable="ID" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'ID' starts with uppercase character.
+</violation>
+<violation beginline="19" endline="21" begincolumn="10" endcolumn="3" rule="EmptyMethodInAbstractClassShouldBeAbstract" ruleset="Code Style" package="problem1" class="Vehicle" method="drive" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#emptymethodinabstractclassshouldbeabstract" priority="1">
+An empty method in an abstract class should be abstract instead
+</violation>
+<violation beginline="19" endline="19" begincolumn="27" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="drive" variable="distance" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'distance' is not assigned and could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="43" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="drive" variable="vehicle" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicle' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="20" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="drive" variable="distance" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'distance' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="31" begincolumn="10" endcolumn="3" rule="EmptyMethodInAbstractClassShouldBeAbstract" ruleset="Code Style" package="problem1" class="Vehicle" method="drive" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#emptymethodinabstractclassshouldbeabstract" priority="1">
+An empty method in an abstract class should be abstract instead
+</violation>
+<violation beginline="29" endline="29" begincolumn="22" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="drive" variable="distance" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'distance' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="36" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="drive" variable="distance2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'distance2' is not assigned and could be declared final
+</violation>
+<violation beginline="34" endline="34" begincolumn="23" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Vehicle" method="drive" variable="vehicle" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicle' is not assigned and could be declared final
+</violation>
+</file>
+</pmd>

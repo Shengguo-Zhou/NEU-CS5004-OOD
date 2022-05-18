@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SmartFoodOrderingSystem.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab04</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">SmartFoodOrderingSystem.java</span></div><h1>SmartFoodOrderingSystem.java</h1><pre class="source lang-java linenums">package problem1;
+
+import java.util.LinkedList;
+
+/**
+ * Represent the abstract order system
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public class SmartFoodOrderingSystem {
+<span class="fc" id="L11">  private LinkedList&lt;Food&gt; list= new LinkedList&lt;&gt;();</span>
+  private String groceryRetailer;
+
+  /**
+   * Represent the abstract order system
+   * @author Shengguo Zhou
+   * @version 1.0
+   */
+<span class="fc" id="L19">  public SmartFoodOrderingSystem(String groceryRetailer) {</span>
+<span class="fc" id="L20">    this.groceryRetailer = groceryRetailer;</span>
+<span class="fc" id="L21">  }</span>
+
+  /**
+   * Represent the get grocery
+   * @author Shengguo Zhou
+   * @version 1.0
+   */
+  public String getGroceryRetailer() {
+<span class="fc" id="L29">    return groceryRetailer;</span>
+  }
+
+  /**
+   * Represent food linkedlist
+   * @author Shengguo Zhou
+   * @version 1.0
+   */
+  public LinkedList&lt;Food&gt; getDailyList(){
+<span class="fc" id="L38">    return list;</span>
+  }
+
+  /**
+   * Represent add food
+   * @author Shengguo Zhou
+   * @version 1.0
+   */
+  public void addFood(Food food){
+<span class="fc" id="L47">    list.add(food);</span>
+<span class="fc" id="L48">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

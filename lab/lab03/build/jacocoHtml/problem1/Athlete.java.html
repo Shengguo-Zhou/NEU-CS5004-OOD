@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Athlete.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab03</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">Athlete.java</span></div><h1>Athlete.java</h1><pre class="source lang-java linenums">package problem1;
+
+/*
+* Class Athlete contains information about an athlete, including athlete's name,
+their height, weight and league. */
+public class Athlete{
+  private Name athletesName;
+  private Double height;
+  private Double weight;
+  private String league;
+
+  /*
+  * Constructs a new athlete, based upon all of the provided input parameters.
+  * @param athletesName - object Name, containing athlete's first, middle and last
+  name
+  * @param height - athlete's height, expressed as a Double in cm (e.g., 6'2'' is
+  recorded as 187.96cm)
+  * @param weight - athlete's weigh, expressed as a Double in pounds (e.g. 125, 155,
+  200 pounds)
+  * @param league - athelete's league, expressed as String * @return - object Athlete
+  */
+
+<span class="fc" id="L23">  public Athlete(Name athletesName, Double height, Double weight, String league) {</span>
+<span class="fc" id="L24">    this.athletesName = athletesName;</span>
+<span class="fc" id="L25">    this.height = height;</span>
+<span class="fc" id="L26">    this.weight = weight;</span>
+<span class="fc" id="L27">    this.league = league;</span>
+<span class="fc" id="L28">  }</span>
+  /*
+  * Constructs a new athlete, based upon all of the provided input parameters.
+  * @param athletesName - object Name, containing athlete's first, middle and last
+  name
+  * @param height - athlete's height, expressed as a Double in cm (e.g., 6'2'' is
+  recorded as 187.96cm)
+  * @param weight - athlete's weigh, expressed as a Double in pounds (e.g. 125, 155,
+  200 pounds)
+  * @return - object Athlete, with league field set to null */
+<span class="fc" id="L38">public Athlete(Name athletesName, Double height, Double weight) {</span>
+<span class="fc" id="L39">  this.athletesName = athletesName;</span>
+<span class="fc" id="L40">  this.height = height;</span>
+<span class="fc" id="L41">  this.weight = weight;</span>
+<span class="fc" id="L42">  this.league = null;</span>
+<span class="fc" id="L43">  }</span>
+  /*
+   * Returns athlete's name as an object Name */
+  public Name getAthletesName() {
+    //System.out.println(athletesName);
+<span class="fc" id="L48">    return athletesName; }</span>
+  /*
+   * Returns athlete's height as a Double */
+  public Double getHeight() {
+<span class="fc" id="L52">    return height; }</span>
+  /*
+   * Returns athlete's weight as a Double */
+  public Double getWeight() {
+<span class="fc" id="L56">    return weight; }</span>
+  /*
+   * Returns athlete's league as a String */
+  public String getLeague() {
+<span class="fc" id="L60">    return league; }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

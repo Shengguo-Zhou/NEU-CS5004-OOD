@@ -1,0 +1,11 @@
+-classpath '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab03/build/classes/java/main:/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab03/build/resources/main'
+-d '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab03/build/docs/javadoc'
+-doctitle 'lab03 1.0 API'
+-notimestamp 
+-quiet 
+-windowtitle 'lab03 1.0 API'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab03/src/main/java/problem1/Athlete.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab03/src/main/java/problem1/Runner.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab03/src/main/java/problem1/Name.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab03/src/main/java/problem1/BasketballPlayer.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab03/src/main/java/problem2/Posn.java'

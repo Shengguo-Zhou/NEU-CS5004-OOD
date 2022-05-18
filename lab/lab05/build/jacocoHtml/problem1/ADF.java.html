@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ADF.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab05</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">ADF.java</span></div><h1>ADF.java</h1><pre class="source lang-java linenums">package problem1;
+
+import java.util.Arrays;
+
+public abstract class ADF extends Artist{
+
+  protected String[] movies;
+  protected String[] series;
+  protected String[] otherMultimedia;
+
+  public ADF(Name artistsName, Integer age, String[] genres,
+      Award[] award, String[] movies, String[] series, String[] otherMultimedia) {
+<span class="nc" id="L13">    super(artistsName, age, genres, award);</span>
+<span class="nc" id="L14">    this.movies = movies;</span>
+<span class="nc" id="L15">    this.series = series;</span>
+<span class="nc" id="L16">    this.otherMultimedia = otherMultimedia;</span>
+<span class="nc" id="L17">  }</span>
+
+  public String[] getMovies() {
+<span class="nc" id="L20">    return movies;</span>
+  }
+
+  public String[] getSeries() {
+<span class="nc" id="L24">    return series;</span>
+  }
+
+  public String[] getOtherMultimedia() {
+<span class="nc" id="L28">    return otherMultimedia;</span>
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="nc bnc" id="L33" title="All 2 branches missed.">    if (this == o) return true;</span>
+<span class="nc bnc" id="L34" title="All 4 branches missed.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="nc bnc" id="L35" title="All 2 branches missed.">    if (!super.equals(o)) return false;</span>
+<span class="nc" id="L36">    ADF that = (ADF) o;</span>
+<span class="nc bnc" id="L37" title="All 6 branches missed.">    return Arrays.equals(movies, that.movies) &amp;&amp; Arrays.equals(series, that.series) &amp;&amp; Arrays.equals(otherMultimedia, that.otherMultimedia);</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="nc" id="L42">    int result = super.hashCode();</span>
+<span class="nc" id="L43">    result = 31 * result + Arrays.hashCode(movies);</span>
+<span class="nc" id="L44">    result = 31 * result + Arrays.hashCode(series);</span>
+<span class="nc" id="L45">    result = 31 * result + Arrays.hashCode(otherMultimedia);</span>
+<span class="nc" id="L46">    return result;</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="nc" id="L51">    return &quot;MediaArtists{&quot; +</span>
+<span class="nc" id="L52">        &quot;movies=&quot; + Arrays.toString(movies) +</span>
+<span class="nc" id="L53">        &quot;, series=&quot; + Arrays.toString(series) +</span>
+<span class="nc" id="L54">        &quot;, otherMultimedia=&quot; + Arrays.toString(otherMultimedia) +</span>
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

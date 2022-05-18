@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem2.PosnTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-02-13T04:17:24" hostname="shengguozhoudeMacBook-Air.local" time="0.044">
+  <properties/>
+  <testcase name="testToString()" classname="problem2.PosnTest" time="0.029"/>
+  <testcase name="getX()" classname="problem2.PosnTest" time="0.001"/>
+  <testcase name="getY()" classname="problem2.PosnTest" time="0.0"/>
+  <testcase name="testHashCode()" classname="problem2.PosnTest" time="0.009"/>
+  <testcase name="testEquals()" classname="problem2.PosnTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

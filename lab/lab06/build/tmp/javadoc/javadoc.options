@@ -1,0 +1,12 @@
+-classpath '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/build/classes/java/main:/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/build/resources/main'
+-d '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/build/docs/javadoc'
+-doctitle 'lab06 1.0 API'
+-notimestamp 
+-quiet 
+-windowtitle 'lab06 1.0 API'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/Boat.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/Train.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/FleetManager.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/TripReport.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/Vehicle.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/lab/lab06/src/main/java/problem1/Bus.java'

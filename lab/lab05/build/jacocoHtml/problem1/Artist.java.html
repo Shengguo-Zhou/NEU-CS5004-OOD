@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Artist.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab05</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">Artist.java</span></div><h1>Artist.java</h1><pre class="source lang-java linenums">package problem1;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.Objects;
+
+public abstract class Artist{
+
+  protected Name artistsName;
+  protected Integer age;
+  protected String[] genres;
+  protected Award[] award;
+
+<span class="nc" id="L14">  public Artist(Name artistsName, Integer age, String[] genres, Award[] award) {</span>
+<span class="nc" id="L15">    this.artistsName = artistsName;</span>
+<span class="nc" id="L16">    this.age = age;</span>
+<span class="nc" id="L17">    this.genres = genres;</span>
+<span class="nc" id="L18">    this.award = award;</span>
+<span class="nc" id="L19">  }</span>
+
+  public Name getArtistsName() {
+<span class="nc" id="L22">    return artistsName;</span>
+  }
+
+  public Integer getAge() {
+<span class="nc" id="L26">    return age;</span>
+  }
+
+  public String[] getGenres() {
+<span class="nc" id="L30">    return genres;</span>
+  }
+
+  public Award[] getAward() {
+<span class="nc" id="L34">    return award;</span>
+  }
+
+  public Boolean receiveAward(String award){
+<span class="nc bnc" id="L38" title="All 2 branches missed.">    if(award!= null) { //a more thorough checking of input string need, other information about the award needed too</span>
+<span class="nc" id="L39">      Award myAward = new Award(award, &quot;Award category&quot;, &quot;Award committee&quot;, LocalDate.now());</span>
+<span class="nc" id="L40">      this.award[this.award.length] = myAward;</span>
+<span class="nc" id="L41">      return Boolean.TRUE;</span>
+    }
+<span class="nc" id="L43">    else return false;</span>
+  }
+
+  @Override
+  public boolean equals(Object o) {
+<span class="nc bnc" id="L48" title="All 2 branches missed.">    if (this == o) return true;</span>
+<span class="nc bnc" id="L49" title="All 4 branches missed.">    if (o == null || getClass() != o.getClass()) return false;</span>
+<span class="nc" id="L50">    Artist that = (Artist) o;</span>
+<span class="nc bnc" id="L51" title="All 8 branches missed.">    return Objects.equals(artistsName, that.artistsName) &amp;&amp; Objects.equals(age, that.age) &amp;&amp; Arrays.equals(genres, that.genres) &amp;&amp; Arrays.equals(award, that.award);</span>
+  }
+
+  @Override
+  public int hashCode() {
+<span class="nc" id="L56">    int result = Objects.hash(artistsName, age);</span>
+<span class="nc" id="L57">    result = 31 * result + Arrays.hashCode(genres);</span>
+<span class="nc" id="L58">    result = 31 * result + Arrays.hashCode(award);</span>
+<span class="nc" id="L59">    return result;</span>
+  }
+
+  @Override
+  public String toString() {
+<span class="nc" id="L64">    return &quot;AbstractArtist{&quot; +</span>
+        &quot;artistsName=&quot; + artistsName +
+        &quot;, age=&quot; + age +
+<span class="nc" id="L67">        &quot;, genres=&quot; + Arrays.toString(genres) +</span>
+<span class="nc" id="L68">        &quot;, award=&quot; + Arrays.toString(award) +</span>
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

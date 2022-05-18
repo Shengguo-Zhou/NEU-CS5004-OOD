@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem1.RunnerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-02-13T04:17:24" hostname="shengguozhoudeMacBook-Air.local" time="0.029">
+  <properties/>
+  <testcase name="setFavouriteRunningEvent()" classname="problem1.RunnerTest" time="0.001"/>
+  <testcase name="setBestHalfMarathonTime()" classname="problem1.RunnerTest" time="0.001"/>
+  <testcase name="getFavouriteRunningEvent()" classname="problem1.RunnerTest" time="0.002"/>
+  <testcase name="getBest5KTime()" classname="problem1.RunnerTest" time="0.002"/>
+  <testcase name="getHeight()" classname="problem1.RunnerTest" time="0.001"/>
+  <testcase name="setBest5KTime()" classname="problem1.RunnerTest" time="0.004"/>
+  <testcase name="getLeague()" classname="problem1.RunnerTest" time="0.003"/>
+  <testcase name="getBestHalfMarathonTime()" classname="problem1.RunnerTest" time="0.0"/>
+  <testcase name="getAthletesName()" classname="problem1.RunnerTest" time="0.001"/>
+  <testcase name="getWeight()" classname="problem1.RunnerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
