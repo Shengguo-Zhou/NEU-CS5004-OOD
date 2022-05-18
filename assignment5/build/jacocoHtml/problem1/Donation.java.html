@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Donation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment5</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">Donation.java</span></div><h1>Donation.java</h1><pre class="source lang-java linenums">package problem1;
+
+import java.time.LocalDateTime;
+import java.util.Objects;
+
+/**
+ * Represent the abstract Donation class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public abstract class Donation {
+
+  /**
+   * amount - the donation of amount
+   */
+  protected Double amount;
+  /**
+   * donationTime - the donation time
+   */
+  protected LocalDateTime donationTime;
+
+  /**
+   * Constructor that creates a new Donation object.
+   * @param amount - the amount of donation money
+   */
+<span class="fc" id="L26">  public Donation(Double amount) {</span>
+<span class="fc" id="L27">    this.amount = amount;</span>
+<span class="fc" id="L28">  }</span>
+
+  /**
+   * Constructor that creates a new Donation object.
+   * @param amount - the amount of donation money
+   * @param donationTime - the donation time
+   */
+<span class="fc" id="L35">  public Donation(Double amount, LocalDateTime donationTime) {</span>
+<span class="fc" id="L36">    this.amount = amount;</span>
+<span class="fc" id="L37">    this.donationTime = donationTime;</span>
+<span class="fc" id="L38">  }</span>
+
+  /**
+   * an override equal function, if two room objects are equal
+   * return true, otherwise return false
+   * @param o - the object of input
+   * @return true or false, if they are equal, return true, otherwise,
+   * return false
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L49" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L50">      return true;</span>
+    }
+<span class="fc bfc" id="L52" title="All 2 branches covered.">    if (!(o instanceof Donation)) {</span>
+<span class="fc" id="L53">      return false;</span>
+    }
+<span class="fc" id="L55">    Donation donation = (Donation) o;</span>
+<span class="pc bpc" id="L56" title="1 of 4 branches missed.">    return amount.equals(donation.amount) &amp;&amp; donationTime.equals(donation.donationTime);</span>
+  }
+
+  /**
+   * hashcode function, if the two objects are equal, return
+   * the same hashcode
+   * @return an integer of the hashcode
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L66">    return Objects.hash(amount, donationTime);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

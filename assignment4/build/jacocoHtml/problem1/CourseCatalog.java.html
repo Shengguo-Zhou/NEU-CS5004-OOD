@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CourseCatalog.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment4</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">CourseCatalog.java</span></div><h1>CourseCatalog.java</h1><pre class="source lang-java linenums">package problem1;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Objects;
+
+/**
+ * Represent the abstract CourseCaatalog class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public class CourseCatalog implements CourseCatalogADT{
+
+  /**
+   * DEFAULTLENGTH - length of course.
+   */
+<span class="fc" id="L17">  private final int DEFAULTLENGTH = 10;</span>
+  /**
+   * array - array of course.
+   */
+  public Course[] array;
+  /**
+   * array - array of course.
+   */
+  public Course[] array2;
+  /**
+   * index - index of the course.
+   */
+<span class="fc" id="L29">  public int index = 0;</span>
+
+  /**
+   * constructor - counstruct a coursecatalog class
+   */
+<span class="fc" id="L34">  public CourseCatalog() {</span>
+<span class="fc" id="L35">    array = new Course[DEFAULTLENGTH];</span>
+<span class="fc" id="L36">  }</span>
+
+  /**
+   * Adds a Course to the end of the CourseCatalog.
+   * @param course - the course of the catalog
+   */
+  @Override
+  public void append(Course course) {
+<span class="fc" id="L44">    this.array[this.index] = course;</span>
+<span class="fc" id="L45">    this.index++;</span>
+<span class="fc" id="L46">    checkValid(this.index);</span>
+<span class="fc" id="L47">  }</span>
+
+  /**
+   * check the array is long enough
+   * @param length - the length of array
+   * @return true or false, if it is long enough return true,
+   * return false otherwise
+   */
+  public boolean checkValid(int length) {
+<span class="fc bfc" id="L56" title="All 2 branches covered.">    if (length &gt;= this.array.length) {</span>
+<span class="fc" id="L57">      this.array2 = new Course[array.length + DEFAULTLENGTH];</span>
+<span class="fc bfc" id="L58" title="All 2 branches covered.">      for (int i = 0; i &lt; array.length; i++) {</span>
+<span class="fc" id="L59">        array2[i] = array[i];</span>
+      }
+<span class="fc" id="L61">      this.array = this.array2;</span>
+<span class="fc" id="L62">      return false;</span>
+    }
+<span class="fc" id="L64">    return true;</span>
+  }
+
+  /**
+   * Removes a specified Course from the CourseCatalog.
+   * @param course - the course of the catalog
+   * @throws CourseNotFoundException - Throw a CourseNotFoundException if the Course doesn’t exist.
+   */
+  @Override
+  public void remove(Course course) throws CourseNotFoundException {
+<span class="fc bfc" id="L74" title="All 2 branches covered.">    for(int i = 0; i &lt; this.index; i++){</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">      if(this.array[i] != course) continue;</span>
+<span class="fc" id="L76">      this.array[i] = null;</span>
+<span class="fc" id="L77">      moveforward(this.array, i);</span>
+<span class="fc" id="L78">      return;</span>
+    }
+<span class="fc" id="L80">    throw new CourseNotFoundException(&quot;The course doesn't exit&quot;);</span>
+  }
+
+  /**
+   * Checks if the specified course exists in the CourseCatalog.
+   * @param array - array of course.
+   * @param count - index of the course.
+   */
+  public void moveforward(Course[] array, int count){
+<span class="fc bfc" id="L89" title="All 2 branches covered.">    for(int i = count; i &lt; this.index - 1; i++){</span>
+<span class="fc" id="L90">      this.array[i] = this.array[i + 1];</span>
+    }
+<span class="fc" id="L92">    this.index--;</span>
+<span class="fc" id="L93">  }</span>
+
+  /**
+   * Checks if the specified course exists in the CourseCatalog.
+   * @param course - array of course.
+   * @return true if it exists, false otherwise
+   */
+  @Override
+  public boolean contains(Course course) {
+<span class="fc bfc" id="L102" title="All 2 branches covered.">    for(int i = 0; i &lt; this.index; i++){</span>
+<span class="fc bfc" id="L103" title="All 2 branches covered.">      if(this.array[i] != course) continue;</span>
+<span class="fc" id="L104">      return true;</span>
+    }
+<span class="fc" id="L106">    return false;</span>
+  }
+
+  /**
+   * Checks index of the specified course
+   * @param course - array of course.
+   * @return index - index of course
+   */
+  @Override
+  public int indexOf(Course course) {
+<span class="fc bfc" id="L116" title="All 2 branches covered.">    for(int i = 0; i &lt; this.index; i++){</span>
+<span class="fc bfc" id="L117" title="All 2 branches covered.">      if(this.array[i] != course) continue;</span>
+<span class="fc" id="L118">      return i;</span>
+    }
+<span class="fc" id="L120">    return -1;</span>
+  }
+
+  /**
+   *
+   * Checks index of the specified course
+   * @return index - index of course
+   */
+  @Override
+  public int count() {
+<span class="fc" id="L130">    return index;</span>
+  }
+
+  /**
+   * Checks index of the specified course
+   * @param i - index of course
+   * @return course - index of course
+   * @throws InvalidIndexException Throw a Exception if the Course doesn’t exist.
+   */
+  @Override
+  public Course get(int i) throws InvalidIndexException {
+<span class="fc bfc" id="L141" title="All 2 branches covered.">    if(i &gt; this.index) throw new InvalidIndexException(&quot;invalid index&quot;);</span>
+<span class="fc" id="L142">    return this.array[i - 1];</span>
+  }
+
+  /**
+   * Checks if the Course Catalog is empty.
+   * @return true or false
+   */
+  @Override
+  public boolean isEmpty() {
+<span class="fc bfc" id="L151" title="All 2 branches covered.">    if(index == 0) return true;</span>
+<span class="fc" id="L152">    else return false;</span>
+  }
+
+  /**
+   * an override equal function, if two room objects are equal
+   * return true, otherwise return false
+   * @param o - the object of input
+   * @return true or false, if they are equal, return true, otherwise,
+   * return false
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L164" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L165">      return true;</span>
+    }
+<span class="fc bfc" id="L167" title="All 2 branches covered.">    if (!(o instanceof CourseCatalog)) {</span>
+<span class="fc" id="L168">      return false;</span>
+    }
+<span class="fc" id="L170">    CourseCatalog that = (CourseCatalog) o;</span>
+<span class="pc bpc" id="L171" title="3 of 4 branches missed.">    return index == that.index &amp;&amp; array.equals(that.array);</span>
+  }
+
+  /**
+   * hashcode function, if the two objects are equal, return
+   * the same hashcode
+   * @return an integer of the hashcode
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L181">    return Objects.hash(array, index);</span>
+  }
+
+  /**
+   * hashcode function, if the two objects are equal, return
+   * the same hashcode
+   * @return an integer of the hashcode
+   */
+  @Override
+  public String toString() {
+<span class="fc" id="L191">    return &quot;CourseCatalog{&quot; +</span>
+        &quot;array=&quot; + array +
+        &quot;, index=&quot; + index +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

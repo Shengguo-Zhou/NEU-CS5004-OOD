@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CustomerAccount.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment1</a> &gt; <a href="index.source.html" class="el_package">assignment1.problem3</a> &gt; <span class="el_source">CustomerAccount.java</span></div><h1>CustomerAccount.java</h1><pre class="source lang-java linenums">package assignment1.problem3;
+
+/**
+ * CustomerAccount consists of
+ ● The account holder’s name.
+ * An account holder is an individual with a first and last name.
+ */
+
+public class CustomerAccount {
+  private String firstName;
+  private String lastName;
+  private Amount amount;
+
+  /**
+   * CustomerAccount
+   * @param firstName - first name.
+   * @param lastName - last name.
+   * @param amount - dollar and cents
+   */
+<span class="fc" id="L20">  public CustomerAccount(String firstName, String lastName, Amount amount) {</span>
+<span class="fc" id="L21">    this.firstName = firstName;</span>
+<span class="fc" id="L22">    this.lastName = lastName;</span>
+<span class="fc" id="L23">    this.amount = amount;</span>
+<span class="fc" id="L24">  }</span>
+
+  /**
+   * Returns first name.
+   * @return firstName.
+   */
+  public String getFirstName() {
+<span class="fc" id="L31">    return firstName;</span>
+  }
+
+  /**
+   * Returns last name.
+   * @return lastName.
+   */
+  public String getLastName() {
+<span class="fc" id="L39">    return lastName;</span>
+  }
+
+  /**
+   * Returns amount - amount of money.
+   * @return amount - amount of money.
+   */
+  public Amount getAmount() {
+<span class="fc" id="L47">    return amount;</span>
+  }
+
+  /**
+   * override comparator
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="pc bpc" id="L55" title="1 of 2 branches missed.">    if(o == this) { return true;}</span>
+<span class="pc bpc" id="L56" title="1 of 2 branches missed.">    if(!(o instanceof CustomerAccount)) { return false;}</span>
+<span class="fc" id="L57">    CustomerAccount anotherAccount = (CustomerAccount) o;</span>
+<span class="pc bpc" id="L58" title="2 of 4 branches missed.">    return firstName == anotherAccount.firstName &amp;&amp;</span>
+        lastName == anotherAccount.lastName &amp;&amp;
+<span class="pc bpc" id="L60" title="1 of 2 branches missed.">        amount.equals(anotherAccount.amount);</span>
+  }
+
+  /**
+   * Returns a new CustomerAccount object.
+   * @param anotherAmount - the amount of money.
+   * @return a CustomerAccount with a new balance.
+   */
+  public CustomerAccount deposit(Amount anotherAmount) {
+<span class="fc" id="L69">    String firstName = this.firstName;</span>
+<span class="fc" id="L70">    String lastName = this.lastName;</span>
+
+<span class="fc" id="L72">    double CENTS_TO_DOLLAR = 100;</span>
+<span class="fc" id="L73">    double totalMoney = (double) this.amount.getDollar() +</span>
+<span class="fc" id="L74">        (double) this.amount.getCents() / CENTS_TO_DOLLAR +</span>
+<span class="fc" id="L75">        (double) anotherAmount.getDollar() +</span>
+<span class="fc" id="L76">        (double) anotherAmount.getCents() / CENTS_TO_DOLLAR;</span>
+
+<span class="fc" id="L78">    int totalDollar = (int) totalMoney;</span>
+<span class="fc" id="L79">    int totalCents = (int) ((totalMoney - totalDollar) * CENTS_TO_DOLLAR);</span>
+
+<span class="fc" id="L81">    Amount newAmount = new Amount(totalDollar, totalCents);</span>
+<span class="fc" id="L82">    return new CustomerAccount(firstName, lastName, newAmount);</span>
+  }
+
+  /**
+   * Returns a new CustomerAccount object.
+   * @param anotherAmount - the amount of money withdrawn.
+   * @return a CustomerAccount with a new balance.
+   */
+  public CustomerAccount withdraw(Amount anotherAmount) {
+<span class="fc" id="L91">    String firstName = this.firstName;</span>
+<span class="fc" id="L92">    String lastName = this.lastName;</span>
+<span class="fc" id="L93">    double CENTS_TO_DOLLAR = 100;</span>
+<span class="fc" id="L94">    double totalMoney = (double) this.amount.getDollar() +</span>
+<span class="fc" id="L95">        (double) this.amount.getCents() / CENTS_TO_DOLLAR -</span>
+<span class="fc" id="L96">        (double) anotherAmount.getDollar() -</span>
+<span class="fc" id="L97">        (double) anotherAmount.getCents() / CENTS_TO_DOLLAR;</span>
+
+<span class="fc" id="L99">    int totalDollar = (int) totalMoney;</span>
+<span class="fc" id="L100">    int totalCents = (int) Math.ceil((totalMoney - totalDollar) * CENTS_TO_DOLLAR);</span>
+
+<span class="fc" id="L102">    Amount newAmount = new Amount(totalDollar, totalCents);</span>
+<span class="fc" id="L103">    return new CustomerAccount(firstName, lastName, newAmount);</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

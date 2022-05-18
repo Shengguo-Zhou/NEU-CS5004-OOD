@@ -1,0 +1,15 @@
+id, text, completed, due, priority, category
+1,Finish HW9,true,2021/08/02,1,?,
+2,Mail passport,true,2021/08/28,3,?,
+3,"tudy for lectures, quiz and final",false,?,2,school
+4,Clean the house,true,2021/08/15,3,home
+5,"Buy yarn for blanket, and do some yoga",true,?,3,home
+6,leetcode practice,false,2022/10/10,1,work
+7,Core Training,true,2022/01/01,1,workout
+8,Core Training2,true,2022/04/26,3,?,
+9,CCCCC,false,2020/05/05,2,home
+10,Core Training2,true,2022/04/26,3,?,
+11,Core Training2,true,2022/04/27,3,?,
+12,"BB,BB",false,2020/08/05,2,home
+13,DDDDDD,false,2019/09/06,2,home
+14,Core Training2,true,2022/04/27,2,home

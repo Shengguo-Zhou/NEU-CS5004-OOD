@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.36.0" timestamp="2022-03-09T18:27:45.225">
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/Course.java">
+<violation beginline="15" endline="15" begincolumn="24" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="Course" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="19" endline="19" begincolumn="24" endcolumn="29" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="Course" variable="prefix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="21" endcolumn="26" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="Course" variable="number" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="31" endline="31" begincolumn="17" endcolumn="27" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Course" method="Course" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="45" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Course" method="Course" variable="number" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'number' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="30" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Course" method="Course" variable="prefix" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'prefix' is not assigned and could be declared final
+</violation>
+<violation beginline="54" endline="54" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="problem1" class="Course" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="54" endline="54" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="Course" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="56" endline="56" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="problem1" class="Course" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="59" endline="59" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="problem1" class="Course" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="61" endline="61" begincolumn="5" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="problem1" class="Course" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'course' could be declared final
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/CourseCatalog.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="31" rule="UnnecessaryImport" ruleset="Code Style" package="problem1" class="CourseCatalog" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.lang.reflect.Array'
+</violation>
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="31" rule="UnusedImports" ruleset="Best Practices" package="problem1" class="CourseCatalog" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.lang.reflect.Array'
+</violation>
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="27" rule="UnnecessaryImport" ruleset="Code Style" package="problem1" class="CourseCatalog" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.ArrayList'
+</violation>
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="27" rule="UnusedImports" ruleset="Best Practices" package="problem1" class="CourseCatalog" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.util.ArrayList'
+</violation>
+<violation beginline="17" endline="17" begincolumn="21" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="CourseCatalog" variable="DEFAULTLENGTH" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="17" endline="17" begincolumn="21" endcolumn="33" rule="FieldNamingConventions" ruleset="Code Style" package="problem1" class="CourseCatalog" variable="DEFAULTLENGTH" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'DEFAULTLENGTH' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="21" endline="21" begincolumn="19" endcolumn="23" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="CourseCatalog" variable="array" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="25" endline="25" begincolumn="19" endcolumn="24" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="CourseCatalog" variable="array2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="29" endline="29" begincolumn="14" endcolumn="18" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem1" class="CourseCatalog" variable="index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="43" endline="43" begincolumn="22" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="append" variable="course" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'course' is not assigned and could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="29" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="checkValid" variable="length" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'length' is not assigned and could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="problem1" class="CourseCatalog" method="checkValid" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="73" endline="73" begincolumn="22" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="remove" variable="course" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'course' is not assigned and could be declared final
+</violation>
+<violation beginline="75" endline="75" begincolumn="7" endcolumn="43" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="75" endline="75" begincolumn="7" endcolumn="43" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="75" endline="75" begincolumn="35" endcolumn="43" rule="ControlStatementBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="75" endline="75" begincolumn="10" endcolumn="32" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="76" endline="76" begincolumn="23" endcolumn="26" rule="NullAssignment" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#nullassignment" priority="3">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="78" endline="78" begincolumn="7" endcolumn="13" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+<violation beginline="78" endline="78" begincolumn="7" endcolumn="13" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+<violation beginline="88" endline="88" begincolumn="27" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="moveforward" variable="array" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'array' is not assigned and could be declared final
+</violation>
+<violation beginline="88" endline="88" begincolumn="43" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="moveforward" variable="count" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'count' is not assigned and could be declared final
+</violation>
+<violation beginline="101" endline="101" begincolumn="27" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="contains" variable="course" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'course' is not assigned and could be declared final
+</violation>
+<violation beginline="103" endline="103" begincolumn="7" endcolumn="43" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="103" endline="103" begincolumn="7" endcolumn="43" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="103" endline="103" begincolumn="35" endcolumn="43" rule="ControlStatementBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="103" endline="103" begincolumn="10" endcolumn="32" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="104" endline="104" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="problem1" class="CourseCatalog" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="104" endline="104" begincolumn="7" endcolumn="18" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+<violation beginline="104" endline="104" begincolumn="7" endcolumn="18" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+<violation beginline="115" endline="115" begincolumn="22" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="indexOf" variable="course" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'course' is not assigned and could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="7" endcolumn="43" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="117" endline="117" begincolumn="7" endcolumn="43" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="117" endline="117" begincolumn="35" endcolumn="43" rule="ControlStatementBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="117" endline="117" begincolumn="10" endcolumn="32" rule="CompareObjectsWithEquals" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#compareobjectswithequals" priority="3">
+Use equals() to compare object references.
+</violation>
+<violation beginline="118" endline="118" begincolumn="7" endcolumn="15" rule="OnlyOneReturn" ruleset="Code Style" package="problem1" class="CourseCatalog" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="118" endline="118" begincolumn="7" endcolumn="15" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+<violation beginline="118" endline="118" begincolumn="7" endcolumn="15" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Error Prone" package="problem1" class="CourseCatalog" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#avoidbranchingstatementaslastinloop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+<violation beginline="140" endline="140" begincolumn="25" endcolumn="25" rule="ShortVariable" ruleset="Code Style" package="problem1" class="CourseCatalog" method="get" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like i
+</violation>
+<violation beginline="140" endline="140" begincolumn="21" endcolumn="25" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="get" variable="i" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'i' is not assigned and could be declared final
+</violation>
+<violation beginline="141" endline="141" begincolumn="5" endcolumn="72" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="get" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="141" endline="141" begincolumn="5" endcolumn="72" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="get" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="141" endline="141" begincolumn="24" endcolumn="72" rule="ControlStatementBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="get" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="151" endline="151" begincolumn="20" endcolumn="31" rule="OnlyOneReturn" ruleset="Code Style" package="problem1" class="CourseCatalog" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="151" endline="151" begincolumn="20" endcolumn="31" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="151" endline="151" begincolumn="20" endcolumn="31" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="151" endline="151" begincolumn="20" endcolumn="31" rule="ControlStatementBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="152" endline="152" begincolumn="10" endcolumn="22" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="152" endline="152" begincolumn="10" endcolumn="22" rule="IfElseStmtsMustUseBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifelsestmtsmustusebraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="152" endline="152" begincolumn="10" endcolumn="22" rule="ControlStatementBraces" ruleset="Code Style" package="problem1" class="CourseCatalog" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="163" endline="163" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="problem1" class="CourseCatalog" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="163" endline="163" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="165" endline="165" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="problem1" class="CourseCatalog" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="168" endline="168" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="problem1" class="CourseCatalog" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="170" endline="170" begincolumn="5" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseCatalog" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'that' could be declared final
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/CourseCatalogADT.java">
+<violation beginline="14" endline="14" begincolumn="10" endcolumn="36" rule="UnnecessaryModifier" ruleset="Code Style" package="problem1" class="CourseCatalogADT" method="append" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'append': the method is declared in an interface type
+</violation>
+<violation beginline="21" endline="21" begincolumn="10" endcolumn="67" rule="UnnecessaryModifier" ruleset="Code Style" package="problem1" class="CourseCatalogADT" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'remove': the method is declared in an interface type
+</violation>
+<violation beginline="28" endline="28" begincolumn="10" endcolumn="41" rule="UnnecessaryModifier" ruleset="Code Style" package="problem1" class="CourseCatalogADT" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'contains': the method is declared in an interface type
+</violation>
+<violation beginline="35" endline="35" begincolumn="10" endcolumn="36" rule="UnnecessaryModifier" ruleset="Code Style" package="problem1" class="CourseCatalogADT" method="indexOf" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'indexOf': the method is declared in an interface type
+</violation>
+<violation beginline="41" endline="41" begincolumn="10" endcolumn="21" rule="UnnecessaryModifier" ruleset="Code Style" package="problem1" class="CourseCatalogADT" method="count" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'count': the method is declared in an interface type
+</violation>
+<violation beginline="50" endline="50" begincolumn="10" endcolumn="60" rule="UnnecessaryModifier" ruleset="Code Style" package="problem1" class="CourseCatalogADT" method="get" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'get': the method is declared in an interface type
+</violation>
+<violation beginline="56" endline="56" begincolumn="10" endcolumn="27" rule="UnnecessaryModifier" ruleset="Code Style" package="problem1" class="CourseCatalogADT" method="isEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'isEmpty': the method is declared in an interface type
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/CourseNotFoundException.java">
+<violation beginline="8" endline="20" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="problem1" class="CourseNotFoundException" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+<violation beginline="17" endline="17" begincolumn="34" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="CourseNotFoundException" method="CourseNotFoundException" variable="message" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'message' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/InvalidIndexException.java">
+<violation beginline="8" endline="19" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="problem1" class="InvalidIndexException" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+<violation beginline="16" endline="16" begincolumn="32" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem1" class="InvalidIndexException" method="InvalidIndexException" variable="message" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'message' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem2/Set.java">
+<violation beginline="10" endline="171" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="problem2" class="Set" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+Avoid short class names like Set
+</violation>
+<violation beginline="15" endline="15" begincolumn="21" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem2" class="Set" variable="DEFAULTLENGTH" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="15" endline="15" begincolumn="21" endcolumn="33" rule="FieldNamingConventions" ruleset="Code Style" package="problem2" class="Set" variable="DEFAULTLENGTH" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'DEFAULTLENGTH' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="19" endline="19" begincolumn="16" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem2" class="Set" variable="array" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="16" endcolumn="21" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem2" class="Set" variable="array2" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="27" endline="27" begincolumn="21" endcolumn="24" rule="UnusedPrivateField" ruleset="Best Practices" package="problem2" class="Set" variable="LING" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'LING'.
+</violation>
+<violation beginline="27" endline="27" begincolumn="21" endcolumn="24" rule="FieldNamingConventions" ruleset="Code Style" package="problem2" class="Set" variable="LING" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'LING' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="31" endline="31" begincolumn="14" endcolumn="18" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="problem2" class="Set" variable="index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="46" endline="46" begincolumn="14" endcolumn="24" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="Set" variable="array" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'array' is not assigned and could be declared final
+</violation>
+<violation beginline="46" endline="46" begincolumn="27" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="Set" variable="index" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="46" endline="46" begincolumn="14" endcolumn="24" rule="ArrayIsStoredDirectly" ruleset="Best Practices" package="problem2" class="Set" method="Set" variable="array" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_bestpractices.html#arrayisstoreddirectly" priority="3">
+The user-supplied array 'array' is stored directly.
+</violation>
+<violation beginline="73" endline="73" begincolumn="26" endcolumn="26" rule="ShortVariable" ruleset="Code Style" package="problem2" class="Set" method="add" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="73" endline="73" begincolumn="18" endcolumn="26" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="add" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="74" endline="74" begincolumn="9" endcolumn="13" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="add" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+<violation beginline="76" endline="76" begincolumn="9" endcolumn="47" rule="OnlyOneReturn" ruleset="Code Style" package="problem2" class="Set" method="add" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="91" endline="91" begincolumn="34" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="checkValidIndex" variable="length" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'length' is not assigned and could be declared final
+</violation>
+<violation beginline="98" endline="98" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="problem2" class="Set" method="checkValidIndex" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="108" endline="108" begincolumn="35" endcolumn="35" rule="ShortVariable" ruleset="Code Style" package="problem2" class="Set" method="contains" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="108" endline="108" begincolumn="27" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="contains" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="109" endline="109" begincolumn="9" endcolumn="13" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="contains" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="18" endcolumn="29" rule="OnlyOneReturn" ruleset="Code Style" package="problem2" class="Set" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="110" endline="110" begincolumn="7" endcolumn="29" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem2" class="Set" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="110" endline="110" begincolumn="7" endcolumn="29" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem2" class="Set" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="110" endline="110" begincolumn="18" endcolumn="29" rule="ControlStatementBraces" ruleset="Code Style" package="problem2" class="Set" method="contains" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="121" endline="121" begincolumn="29" endcolumn="29" rule="ShortVariable" ruleset="Code Style" package="problem2" class="Set" method="remove" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="121" endline="121" begincolumn="21" endcolumn="29" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="remove" variable="n" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="122" endline="124" begincolumn="25" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="problem2" class="Set" method="remove" variable="position" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'position' (lines '122'-'124').
+</violation>
+<violation beginline="124" endline="124" begincolumn="7" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem2" class="Set" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="124" endline="124" begincolumn="7" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem2" class="Set" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="124" endline="124" begincolumn="25" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="problem2" class="Set" method="remove" variable="position" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'position' (lines '124'-'124').
+</violation>
+<violation beginline="124" endline="124" begincolumn="25" endcolumn="37" rule="ControlStatementBraces" ruleset="Code Style" package="problem2" class="Set" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="126" endline="126" begincolumn="24" endcolumn="62" rule="OnlyOneReturn" ruleset="Code Style" package="problem2" class="Set" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="126" endline="126" begincolumn="5" endcolumn="62" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem2" class="Set" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="126" endline="126" begincolumn="5" endcolumn="62" rule="IfStmtsMustUseBraces" ruleset="Code Style" package="problem2" class="Set" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#ifstmtsmustusebraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="126" endline="126" begincolumn="24" endcolumn="62" rule="ControlStatementBraces" ruleset="Code Style" package="problem2" class="Set" method="remove" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
+This statement should have braces
+</violation>
+<violation beginline="150" endline="150" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="problem2" class="Set" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="150" endline="150" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="152" endline="152" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="problem2" class="Set" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="155" endline="155" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="problem2" class="Set" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="157" endline="157" begincolumn="5" endcolumn="21" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="problem2" class="Set" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.36.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'set' could be declared final
+</violation>
+</file>
+</pmd>

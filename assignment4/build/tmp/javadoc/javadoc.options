@@ -1,0 +1,12 @@
+-classpath '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/build/classes/java/main:/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/build/resources/main'
+-d '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/build/docs/javadoc'
+-doctitle 'assignment4 1.0 API'
+-notimestamp 
+-quiet 
+-windowtitle 'assignment4 1.0 API'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/CourseCatalog.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/CourseCatalogADT.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/Course.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/InvalidIndexException.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem1/CourseNotFoundException.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment4/src/main/java/problem2/Set.java'

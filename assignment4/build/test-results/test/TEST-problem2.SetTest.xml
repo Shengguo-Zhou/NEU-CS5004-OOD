@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem2.SetTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2022-03-10T02:35:31" hostname="shengguozhoudeMacBook-Air.local" time="0.016">
+  <properties/>
+  <testcase name="remove()" classname="problem2.SetTest" time="0.001"/>
+  <testcase name="contains()" classname="problem2.SetTest" time="0.002"/>
+  <testcase name="add()" classname="problem2.SetTest" time="0.001"/>
+  <testcase name="size()" classname="problem2.SetTest" time="0.001"/>
+  <testcase name="testHashCode()" classname="problem2.SetTest" time="0.001"/>
+  <testcase name="emptySet()" classname="problem2.SetTest" time="0.001"/>
+  <testcase name="testEquals()" classname="problem2.SetTest" time="0.0"/>
+  <testcase name="isEmpty()" classname="problem2.SetTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

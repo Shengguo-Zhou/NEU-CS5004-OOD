@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Set.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment4</a> &gt; <a href="index.source.html" class="el_package">problem2</a> &gt; <span class="el_source">Set.java</span></div><h1>Set.java</h1><pre class="source lang-java linenums">package problem2;
+
+import java.util.Objects;
+
+/**
+ * Represent the set class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public class Set {
+
+  /**
+   * DEFAULTLENGTH - length of course.
+   */
+<span class="fc" id="L15">  private final int DEFAULTLENGTH = 10;</span>
+  /**
+   * array - the array in the set
+   */
+  public int[] array;
+  /**
+   * array - the array in the set
+   */
+  public int[] array2;
+  /**
+   * index - the index of the set
+   */
+<span class="fc" id="L27">  private final int LING = 0;</span>
+  /**
+   * index - the index of the set
+   */
+  public int index;
+
+  /**
+   * Constructor that creates a new set object.
+   */
+<span class="fc" id="L36">  public Set() {</span>
+<span class="fc" id="L37">    this.array = new int[DEFAULTLENGTH];</span>
+<span class="fc" id="L38">    this.index = 0;</span>
+<span class="fc" id="L39">  }</span>
+
+  /**
+   *  Constructor that creates a new set object.
+   * @param array - the array in the set
+   * @param index - the index of the set
+   */
+<span class="fc" id="L46">  public Set(int[] array, int index) {</span>
+<span class="fc" id="L47">    this.array = array;</span>
+<span class="fc" id="L48">    this.index = index;</span>
+<span class="fc" id="L49">  }</span>
+
+  /**
+   * Creates and returns an empty Set.
+   * @return set - a new set
+   */
+  public Set emptySet(){
+<span class="fc" id="L56">    return new Set();</span>
+  }
+
+
+  /**
+   * Checks if the Set is empty.
+   * @return true or false Returns true if the Set contains no items, false otherwise.
+   */
+  public boolean isEmpty(){
+<span class="fc bfc" id="L65" title="All 2 branches covered.">    return this.index == 0;</span>
+  }
+
+  /**
+   * Adds the given Integer to the Set if and only if that Integer is not already in the Set.
+   * @param n - Integer is not already in the Set.
+   * @return set - a new set
+   */
+  public Set add(Integer n){
+<span class="fc bfc" id="L74" title="All 2 branches covered.">    for(int i : this.array){</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">      if(i == n) {</span>
+<span class="fc" id="L76">        return new Set(this.array, this.index);</span>
+      }
+    }
+<span class="fc" id="L79">    this.array[index] = n;</span>
+<span class="fc" id="L80">    this.index++;</span>
+<span class="fc" id="L81">    checkValidIndex(this.index);</span>
+<span class="fc" id="L82">    return new Set(this.array, this.index);</span>
+  }
+
+  /**
+   * check the array is long enough
+   * @param length - the length of array
+   * @return true or false, if it is long enough return true,
+   * return false otherwise
+   */
+  public boolean checkValidIndex(int length) {
+<span class="fc bfc" id="L92" title="All 2 branches covered.">    if (length &gt;= this.array.length) {</span>
+<span class="fc" id="L93">      this.array2 = new int[array.length + DEFAULTLENGTH];</span>
+<span class="fc bfc" id="L94" title="All 2 branches covered.">      for (int i = 0; i &lt; array.length; i++) {</span>
+<span class="fc" id="L95">        array2[i] = array[i];</span>
+      }
+<span class="fc" id="L97">      this.array = this.array2;</span>
+<span class="fc" id="L98">      return false;</span>
+    }
+<span class="fc" id="L100">    return true;</span>
+  }
+
+  /**
+   * Returns true if the given Integer is in the Set, false otherwise.
+   * @param n - Integer is not already in the Set.
+   * @return true or false
+   */
+  public Boolean contains(Integer n){
+<span class="fc bfc" id="L109" title="All 2 branches covered.">    for(int i : this.array){</span>
+<span class="fc bfc" id="L110" title="All 2 branches covered.">      if(i == n) return true;</span>
+    }
+<span class="fc" id="L112">    return false;</span>
+  }
+
+  /**
+   * Returns a copy of the Set with the given Integer removed.
+   * If the given Integer is not in the Set, returns the Set as is.
+   * @param n - the given Integer is not in the Set
+   * @return set - a new set
+   */
+  public Set remove(Integer n){
+<span class="fc" id="L122">    int position = -1;</span>
+<span class="fc bfc" id="L123" title="All 2 branches covered.">    for(int i = 0; i &lt; this.index; i++){</span>
+<span class="fc bfc" id="L124" title="All 2 branches covered.">      if(array[i] == n) position = i;</span>
+    }
+<span class="fc bfc" id="L126" title="All 2 branches covered.">    if(position == -1) return new Set(this.array, this.index);</span>
+<span class="fc bfc" id="L127" title="All 2 branches covered.">    for(int i = position; i &lt; this.index - 1; i++){</span>
+<span class="fc" id="L128">      this.array[i] = this.array[i + 1];</span>
+    }
+<span class="fc" id="L130">    this.index--;</span>
+<span class="fc" id="L131">    return new Set(this.array, this.index);</span>
+  }
+
+  /**
+   * Gets the number of items in the Set.
+   * @return index - index of size
+   */
+  public Integer size(){
+<span class="fc" id="L139">    return this.index;</span>
+  }
+
+  /**
+   * an override equal function, if two room objects are equal
+   * return true, otherwise return false
+   * @param o - the object of input
+   * @return true or false, if they are equal, return true, otherwise,
+   * return false
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L151" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L152">      return true;</span>
+    }
+<span class="fc bfc" id="L154" title="All 2 branches covered.">    if (!(o instanceof Set)) {</span>
+<span class="fc" id="L155">      return false;</span>
+    }
+<span class="fc" id="L157">    Set set = (Set) o;</span>
+<span class="fc bfc" id="L158" title="All 4 branches covered.">    return index == set.index &amp;&amp; array.equals(set.array);</span>
+  }
+
+  /**
+   * hashcode function, if the two objects are equal, return
+   * the same hashcode
+   * @return an integer of the hashcode
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L168">    return Objects.hash(array, index);</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

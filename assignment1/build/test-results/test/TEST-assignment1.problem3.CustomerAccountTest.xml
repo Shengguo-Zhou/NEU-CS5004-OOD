@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="assignment1.problem3.CustomerAccountTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-02-14T19:47:14" hostname="shengguozhoudeMacBook-Air.local" time="0.012">
+  <properties/>
+  <testcase name="depositTest()" classname="assignment1.problem3.CustomerAccountTest" time="0.0"/>
+  <testcase name="getFirstName()" classname="assignment1.problem3.CustomerAccountTest" time="0.002"/>
+  <testcase name="getDollar()" classname="assignment1.problem3.CustomerAccountTest" time="0.001"/>
+  <testcase name="getLastName()" classname="assignment1.problem3.CustomerAccountTest" time="0.002"/>
+  <testcase name="withdrawTest()" classname="assignment1.problem3.CustomerAccountTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

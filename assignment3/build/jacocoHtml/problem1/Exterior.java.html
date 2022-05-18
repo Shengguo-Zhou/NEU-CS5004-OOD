@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Exterior.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment3</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">Exterior.java</span></div><h1>Exterior.java</h1><pre class="source lang-java linenums">package problem1;
+
+/**
+ * Represent an abstract exterior class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public abstract class Exterior extends Service{
+<span class="fc" id="L9">  protected int base = Interior.BASENUMBER;</span>
+  protected int hourKind;
+  protected double discount10;
+  protected double monthlyDiscount;
+<span class="fc" id="L13">  private int ONE = 1;</span>
+<span class="fc" id="L14">  private int TWO = 2;</span>
+<span class="fc" id="L15">  private int FOUR = 4;</span>
+
+  /**
+   * Constructor that creates a new exterior object.
+   */
+  public Exterior(String address, Size size, boolean carryout, Integer number) {
+<span class="fc" id="L21">    super(address, size, carryout, number);</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">    if(size == Size.small) hourKind = ONE;</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">    else if(size == Size.medium) hourKind = TWO;</span>
+<span class="fc" id="L24">    else hourKind = FOUR;</span>
+
+<span class="pc bpc" id="L26" title="1 of 2 branches missed.">    if(this.number % Interior.TENINTEGER == Interior.NINEINTEGER) discount10 = Interior.DICOUNT3;</span>
+<span class="fc" id="L27">    else discount10 = Interior.DICOUNT0;</span>
+
+<span class="pc bpc" id="L29" title="1 of 4 branches missed.">    if(carryout &amp;&amp; discount10 == Interior.DICOUNT0) monthlyDiscount = Interior.DICOUNT4;</span>
+<span class="fc" id="L30">    else monthlyDiscount = Interior.DICOUNT0;</span>
+<span class="fc" id="L31">  }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

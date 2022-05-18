@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Trip.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment1</a> &gt; <a href="index.source.html" class="el_package">assignment1.problem2</a> &gt; <span class="el_source">Trip.java</span></div><h1>Trip.java</h1><pre class="source lang-java linenums">package assignment1.problem2;
+/**For each commuter trip made by an employee,
+ * you will need to store the trip’s starting location (a String),
+ * the end location (a String), and the start and end time.
+ * */
+public class Trip {
+  private String startLoc;
+  private String endLoc;
+  private Time startTime;
+  private Time endTime;
+  /**
+   * Constructor that creates a new  object.
+   * @param startLoc - start location.
+   * @param endLoc - end location.
+   * @param startTime - start time.
+   * @param endTime - end time;
+   */
+<span class="fc" id="L18">  Trip(String startLoc, String endLoc, Time startTime, Time endTime){</span>
+<span class="fc" id="L19">    this.startLoc = startLoc;</span>
+<span class="fc" id="L20">    this.endLoc = endLoc;</span>
+<span class="fc" id="L21">    this.startTime = startTime;</span>
+<span class="fc" id="L22">    this.endTime = endTime;</span>
+<span class="fc" id="L23">  }</span>
+
+  /**
+   * Returns start location.
+   * @return start location.
+   */
+  public String getStartLocation() {
+<span class="fc" id="L30">    return startLoc;</span>
+  }
+
+
+  /**
+   * Returns end location.
+   * @return end location.
+   */
+  public String getEndLocation() {
+<span class="fc" id="L39">    return endLoc;</span>
+  }
+
+  /**
+   * Returns start time.
+   * @return startTime - start time.
+   */
+  public String getStartTime() {
+<span class="fc" id="L47">    return startTime.getHour() + &quot;:&quot; +</span>
+<span class="fc" id="L48">        startTime.getMinute() + &quot;:&quot; +</span>
+<span class="fc" id="L49">        startTime.getSecond();</span>
+  }
+
+  /**
+   * Returns end time.
+   * @return endTime - end time.
+   */
+  public String getEndTime() {
+<span class="fc" id="L57">    return endTime.getHour() + &quot;:&quot; +</span>
+<span class="fc" id="L58">        endTime.getMinute() + &quot;:&quot; +</span>
+<span class="fc" id="L59">        endTime.getSecond();</span>
+  }
+
+  /**
+   * Returns the Time of duration.
+   * @return a duration Time.
+   */
+  public Time getDuration() {
+<span class="fc" id="L67">    int totalSecond = endTime.totalTime - startTime.totalTime;</span>
+<span class="fc" id="L68">    int durTimeHour = totalSecond / endTime.HOUR_PER_SECOND;</span>
+<span class="fc" id="L69">    int durTimeMinute = totalSecond % endTime.HOUR_PER_SECOND / endTime.MINUTE_PER_SECOND;</span>
+<span class="fc" id="L70">    int durTimeSecond = totalSecond % endTime.HOUR_PER_SECOND % endTime.MINUTE_PER_SECOND;</span>
+
+<span class="fc" id="L72">    return new Time(durTimeHour, durTimeMinute, durTimeSecond);</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

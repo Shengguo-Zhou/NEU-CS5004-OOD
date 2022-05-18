@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NonProfit.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment5</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">NonProfit.java</span></div><h1>NonProfit.java</h1><pre class="source lang-java linenums">package problem1;
+
+import java.util.LinkedList;
+import java.util.Objects;
+
+/**
+ * Represent the nonProfit class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+
+public class NonProfit {
+
+  /**
+   * name - name of non-profiter
+   */
+  public String name;
+  /**
+   * donationlinkedlist - the linkedlist of donation
+   */
+  public LinkedList&lt;Donation&gt; donationLinkedList;
+  /**
+   * month in year - the month in a year
+   */
+<span class="fc" id="L25">  private final int MONTH_IN_YEAR = 12;</span>
+  /**
+   * extra count - the extra count
+   */
+<span class="fc" id="L29">  private final int EXTRA_COUNT = 1;</span>
+  /**
+   * non donation - the non donation
+   */
+<span class="fc" id="L33">  private final int NO_DONATION = 0;</span>
+
+  /**
+   * Constructor that creates a new non profit object.
+   * @param name - name of non-profiter
+   * @param donationLinkedList - the linkedlist of donation
+   */
+<span class="fc" id="L40">  public NonProfit(String name, LinkedList&lt;Donation&gt; donationLinkedList) {</span>
+<span class="fc" id="L41">    this.name = name;</span>
+<span class="fc" id="L42">    this.donationLinkedList = donationLinkedList;</span>
+<span class="fc" id="L43">  }</span>
+
+  /**
+   * add a donation
+   * @param donation - the donation of donater
+   */
+  public void addDonation(Donation donation){
+<span class="fc" id="L50">    this.donationLinkedList.add(donation);</span>
+<span class="fc" id="L51">  }</span>
+
+  /**
+   * get the total money
+   * @param year - the get money year
+   * @return the total money
+   */
+  public double getTotalDonationsForYear(int year){
+<span class="fc" id="L59">    double sum = 0;</span>
+
+<span class="fc bfc" id="L61" title="All 2 branches covered.">    for(Donation donation : donationLinkedList){</span>
+
+<span class="fc bfc" id="L63" title="All 2 branches covered.">      if(donation instanceof OneTimeDonation){</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">        if(year != donation.donationTime.getYear()) continue;</span>
+<span class="fc" id="L65">        sum += donation.amount;</span>
+      }
+
+<span class="fc bfc" id="L68" title="All 2 branches covered.">      else if(donation instanceof MonthlyDonation){</span>
+<span class="fc" id="L69">        int month = 0;</span>
+<span class="fc bfc" id="L70" title="All 2 branches covered.">        if(year &lt; donation.donationTime.getYear()) continue;</span>
+
+<span class="fc bfc" id="L72" title="All 2 branches covered.">        if(year == donation.donationTime.getYear()){</span>
+<span class="fc bfc" id="L73" title="All 2 branches covered.">          if(((MonthlyDonation) donation).cancellationTime == null ||</span>
+<span class="pc bpc" id="L74" title="1 of 2 branches missed.">              ((MonthlyDonation) donation).cancellationTime.getYear() &gt; year)</span>
+<span class="fc" id="L75">            month = MONTH_IN_YEAR - donation.donationTime.getMonthValue() + EXTRA_COUNT;</span>
+          else
+<span class="nc" id="L77">            month = ((MonthlyDonation) donation).cancellationTime.getMonthValue()</span>
+<span class="nc" id="L78">              - donation.donationTime.getMonthValue();</span>
+        }
+        else{
+<span class="fc bfc" id="L81" title="All 2 branches covered.">          if(((MonthlyDonation) donation).cancellationTime == null ||</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">              ((MonthlyDonation) donation).cancellationTime.getYear() &gt; year)</span>
+<span class="fc" id="L83">            month = MONTH_IN_YEAR;</span>
+<span class="fc bfc" id="L84" title="All 2 branches covered.">          else if(((MonthlyDonation) donation).cancellationTime.getYear() &lt; year)</span>
+<span class="fc" id="L85">            month = NO_DONATION;</span>
+<span class="pc bpc" id="L86" title="1 of 2 branches missed.">          else if(((MonthlyDonation) donation).cancellationTime.getYear() == year)</span>
+<span class="fc" id="L87">            month = ((MonthlyDonation) donation).cancellationTime.getMonthValue();</span>
+        }
+<span class="fc" id="L89">        sum += donation.amount * month;</span>
+<span class="fc" id="L90">      }</span>
+
+      else{
+<span class="fc bfc" id="L93" title="All 4 branches covered.">        if(donation.donationTime != null &amp;&amp; donation.donationTime.getYear() == year)</span>
+<span class="fc" id="L94">          sum += donation.amount;</span>
+      }
+<span class="fc" id="L96">    }</span>
+
+<span class="fc" id="L98">    return sum;</span>
+  }
+
+  /**
+   * an override equal function, if two room objects are equal
+   * return true, otherwise return false
+   * @param o - the object of input
+   * @return true or false, if they are equal, return true, otherwise,
+   * return false
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L110" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L111">      return true;</span>
+    }
+<span class="fc bfc" id="L113" title="All 2 branches covered.">    if (!(o instanceof NonProfit)) {</span>
+<span class="fc" id="L114">      return false;</span>
+    }
+<span class="fc" id="L116">    NonProfit nonProfit = (NonProfit) o;</span>
+<span class="pc bpc" id="L117" title="1 of 4 branches missed.">    return name.equals(nonProfit.name) &amp;&amp; donationLinkedList.equals(nonProfit.donationLinkedList);</span>
+  }
+
+  /**
+   * hashcode function, if the two objects are equal, return
+   * the same hashcode
+   * @return an integer of the hashcode
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L127">    return Objects.hash(name, donationLinkedList);</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

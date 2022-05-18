@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Specialist.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment3</a> &gt; <a href="index.source.html" class="el_package">problem1</a> &gt; <span class="el_source">Specialist.java</span></div><h1>Specialist.java</h1><pre class="source lang-java linenums">package problem1;
+
+/**
+ * Represent an abstract specialist class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public abstract class Specialist extends Service{
+  /**
+   * numberOfLicensedEmployee - number of licensed employee
+   */
+  protected Integer numberOfLicensedEmployee;
+  /**
+   * complexOrNot - whether the task is complex or not
+   */
+  protected Boolean complexOrNot;
+
+<span class="fc" id="L18">  private final int atLeastEmployee = 1;</span>
+<span class="fc" id="L19">  private final int CL = 3;</span>
+<span class="fc" id="L20">  private final int CSM = 2;</span>
+<span class="fc" id="L21">  protected int base = 200;</span>
+  protected int extracharge;
+
+  /**
+   * Constructor that creates a new SingleRoom object.
+   * @param numberOfLicensedEmployee - number of licensed employee
+   * @param complexOrNot - whether the task is complex or not
+   */
+  public Specialist(String address, Size size, boolean carryout, Integer number,
+      Integer numberOfLicensedEmployee, Boolean complexOrNot) {
+<span class="fc" id="L31">    super(address, size, carryout, number);</span>
+
+<span class="fc" id="L33">    this.complexOrNot = complexOrNot;</span>
+
+<span class="fc bfc" id="L35" title="All 2 branches covered.">    if(complexOrNot)</span>
+<span class="pc bpc" id="L36" title="1 of 2 branches missed.">      if(size == Size.large) this.numberOfLicensedEmployee = CL;</span>
+<span class="fc" id="L37">      else this.numberOfLicensedEmployee = CSM;</span>
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">    else if(numberOfLicensedEmployee &lt; atLeastEmployee)</span>
+<span class="fc" id="L39">      this.numberOfLicensedEmployee = atLeastEmployee;</span>
+<span class="nc" id="L40">    else this.numberOfLicensedEmployee = numberOfLicensedEmployee;</span>
+<span class="fc" id="L41">  }</span>
+
+  /**
+   * get price function
+   * @return price - price of service
+   */
+  public double calculatePrice() {
+<span class="fc" id="L48">    return base * this.numberOfLicensedEmployee + extracharge;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

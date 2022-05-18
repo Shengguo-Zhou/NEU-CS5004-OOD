@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Catalog.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment5</a> &gt; <a href="index.source.html" class="el_package">problem2</a> &gt; <span class="el_source">Catalog.java</span></div><h1>Catalog.java</h1><pre class="source lang-java linenums">package problem2;
+
+import java.util.LinkedList;
+import java.util.Locale;
+import java.util.Objects;
+
+/**
+ * Represent the catalog class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public class Catalog {
+
+  /**
+   * library - the whole library catalog
+   */
+  public LinkedList&lt;Collection&gt; library;
+
+  /**
+   * construtor - create a catalog class
+   */
+<span class="fc" id="L22">  public Catalog() {</span>
+<span class="fc" id="L23">    this.library = new LinkedList&lt;&gt;();</span>
+<span class="fc" id="L24">  }</span>
+
+  /**
+   * construtor - create a catalog class
+   * @param library - the whole library catalog
+   */
+<span class="fc" id="L30">  public Catalog(LinkedList&lt;Collection&gt; library) {</span>
+<span class="fc" id="L31">    this.library = library;</span>
+<span class="fc" id="L32">  }</span>
+
+  /**
+   * add the item to library
+   * @param collection - the package of the library
+   */
+  public void addItem(Collection collection){
+<span class="fc" id="L39">    library.add(collection);</span>
+<span class="fc" id="L40">  }</span>
+
+  /**
+   * remove the item from the library
+   * @param collection - the package of the libarary
+   */
+  public void removeItem(Collection collection){
+<span class="fc" id="L47">    library.remove(collection);</span>
+<span class="fc" id="L48">  }</span>
+
+  /**
+   * search the keyword in catalog
+   * @param keyword - the key word
+   * @return a new catalog
+   */
+  public Catalog search(String keyword){
+<span class="fc" id="L56">    Catalog newCatalog = new Catalog();</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">    for(Collection collection : this.library){</span>
+<span class="fc bfc" id="L58" title="All 2 branches covered.">      if(collection.title.contains(keyword.toLowerCase()) ||</span>
+<span class="fc bfc" id="L59" title="All 2 branches covered.">      collection.title.contains(keyword.toUpperCase()))</span>
+<span class="fc" id="L60">        newCatalog.addItem(collection);</span>
+<span class="fc" id="L61">    }</span>
+<span class="fc" id="L62">    return newCatalog;</span>
+  }
+
+  /**
+   * search author in the string
+   * @param author - the author of the catalog
+   * @return a new catalog
+   */
+  public Catalog search(Author author){
+<span class="fc" id="L71">    Catalog newCatalog = new Catalog();</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">    for(Collection collection : this.library){</span>
+<span class="fc bfc" id="L73" title="All 4 branches covered.">      if(collection.creator instanceof Author &amp;&amp; collection.creator == author)</span>
+<span class="fc" id="L74">        newCatalog.addItem(collection);</span>
+<span class="fc" id="L75">    }</span>
+<span class="fc" id="L76">    return newCatalog;</span>
+  }
+
+  /**
+   * search an artist from the string
+   * @param artist - the artist of the recording artist
+   * @return a new catalog
+   */
+  public Catalog search(RecordingArtist artist){
+<span class="fc" id="L85">    Catalog newCatalog = new Catalog();</span>
+<span class="fc bfc" id="L86" title="All 2 branches covered.">    for(Collection collection : this.library){</span>
+<span class="fc bfc" id="L87" title="All 4 branches covered.">      if(collection.creator instanceof RecordingArtist &amp;&amp;</span>
+          collection.creator == artist)
+<span class="fc" id="L89">        newCatalog.addItem(collection);</span>
+<span class="fc bfc" id="L90" title="All 2 branches covered.">      else if(collection.creator instanceof Band &amp;&amp;</span>
+<span class="fc bfc" id="L91" title="All 2 branches covered.">          ((Band) collection.creator).member.contains(artist))</span>
+<span class="fc" id="L92">        newCatalog.addItem(collection);</span>
+<span class="fc" id="L93">    }</span>
+<span class="fc" id="L94">    return newCatalog;</span>
+  }
+
+  /**
+   * an override equal function, if two room objects are equal
+   * return true, otherwise return false
+   * @param o - the object of input
+   * @return true or false, if they are equal, return true, otherwise,
+   * return false
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L106" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L107">      return true;</span>
+    }
+<span class="fc bfc" id="L109" title="All 2 branches covered.">    if (!(o instanceof Catalog)) {</span>
+<span class="fc" id="L110">      return false;</span>
+    }
+<span class="fc" id="L112">    Catalog catalog = (Catalog) o;</span>
+<span class="fc" id="L113">    return Objects.equals(library, catalog.library);</span>
+  }
+
+  /**
+   * hashcode function, if the two objects are equal, return
+   * the same hashcode
+   * @return an integer of the hashcode
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L123">    return Objects.hash(library);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

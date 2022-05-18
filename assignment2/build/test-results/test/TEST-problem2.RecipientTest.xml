@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem2.RecipientTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-02-19T01:20:44" hostname="shengguozhoudeMacBook-Air.local" time="0.078">
+  <properties/>
+  <testcase name="constructionTest()" classname="problem2.RecipientTest" time="0.002"/>
+  <testcase name="patternMatchesTest()" classname="problem2.RecipientTest" time="0.01"/>
+  <testcase name="getFirstName()" classname="problem2.RecipientTest" time="0.0"/>
+  <testcase name="getLastName()" classname="problem2.RecipientTest" time="0.001"/>
+  <testcase name="testHashCode()" classname="problem2.RecipientTest" time="0.001"/>
+  <testcase name="testEquals()" classname="problem2.RecipientTest" time="0.002"/>
+  <testcase name="getEmail()" classname="problem2.RecipientTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

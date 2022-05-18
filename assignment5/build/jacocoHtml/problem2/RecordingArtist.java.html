@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RecordingArtist.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment5</a> &gt; <a href="index.source.html" class="el_package">problem2</a> &gt; <span class="el_source">RecordingArtist.java</span></div><h1>RecordingArtist.java</h1><pre class="source lang-java linenums">package problem2;
+
+import java.util.Objects;
+
+/**
+ * Represent the recording artist class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public class RecordingArtist extends Individual{
+
+  /**
+   * firstname - the first name of the recording artist
+   */
+  public String firstName;
+  /**
+   * lastname - the last name of the recording artist
+   */
+  public String LastName;
+
+  /**
+   * constructor - create a recordingartist class
+   * @param firstName - the first name of the class
+   * @param LastName - the last name of the class
+   */
+<span class="fc" id="L26">  public RecordingArtist(String firstName, String LastName) {</span>
+<span class="fc" id="L27">    this.firstName = firstName;</span>
+<span class="fc" id="L28">    this.LastName = LastName;</span>
+<span class="fc" id="L29">  }</span>
+
+  /**
+   * an override equal function, if two room objects are equal
+   * return true, otherwise return false
+   * @param o - the object of input
+   * @return true or false, if they are equal, return true, otherwise,
+   * return false
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L40" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L41">      return true;</span>
+    }
+<span class="fc bfc" id="L43" title="All 2 branches covered.">    if (!(o instanceof RecordingArtist)) {</span>
+<span class="fc" id="L44">      return false;</span>
+    }
+<span class="fc" id="L46">    RecordingArtist that = (RecordingArtist) o;</span>
+<span class="fc bfc" id="L47" title="All 4 branches covered.">    return Objects.equals(firstName, that.firstName) &amp;&amp; Objects.equals(LastName,</span>
+        that.LastName);
+  }
+
+  /**
+   * hashcode function, if the two objects are equal, return
+   * the same hashcode
+   * @return an integer of the hashcode
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L58">    return Objects.hash(firstName, LastName);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

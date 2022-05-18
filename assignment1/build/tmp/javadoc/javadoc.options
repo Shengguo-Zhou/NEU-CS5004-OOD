@@ -1,0 +1,12 @@
+-classpath '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/build/classes/java/main:/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/build/resources/main'
+-d '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/build/docs/javadoc'
+-doctitle 'assignment1 1.0 API'
+-notimestamp 
+-quiet 
+-windowtitle 'assignment1 1.0 API'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/src/main/java/assignment1/problem1/Owner.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/src/main/java/assignment1/problem1/Vehicle.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/src/main/java/assignment1/problem2/Time.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/src/main/java/assignment1/problem2/Trip.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/src/main/java/assignment1/problem3/Amount.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment1/src/main/java/assignment1/problem3/CustomerAccount.java'

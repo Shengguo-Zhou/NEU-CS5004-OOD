@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Mail.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment2</a> &gt; <a href="index.source.html" class="el_package">problem2</a> &gt; <span class="el_source">Mail.java</span></div><h1>Mail.java</h1><pre class="source lang-java linenums">package problem2;
+
+import java.util.Objects;
+
+/**
+ * Represents the Mail class
+ * @author Shengguo Zhou
+ * @version 1.0
+ */
+public class Mail {
+
+  /**
+   * size - the size
+   */
+  private Size size;
+  /**
+   * recipient - the recipient
+   */
+  private Recipient recipient;
+  /**
+   * VALID_SIZE - the valid size
+   */
+<span class="fc" id="L23">  private int VALID_SIZE = 1;</span>
+
+  /**
+   * Constructor : create the constructor of mail
+   * @param size - the size
+   * @param recipient - a recipient
+   */
+<span class="fc" id="L30">  public Mail(Size size, Recipient recipient) {</span>
+<span class="fc bfc" id="L31" title="All 4 branches covered.">    if(size.getDepth() &gt;= VALID_SIZE &amp;&amp; size.getHeight() &gt;= VALID_SIZE &amp;&amp;</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">    size.getWidth() &gt;= VALID_SIZE)</span>
+<span class="fc" id="L33">      this.size = size;</span>
+    else
+<span class="fc" id="L35">      throw new IllegalArgumentException(&quot;size is not valid&quot;);</span>
+
+<span class="fc" id="L37">    this.recipient = recipient;</span>
+<span class="fc" id="L38">  }</span>
+
+  /**
+   * getSize() - get the size of the package
+   * @return size - the size of the package
+   */
+  public Size getSize() {
+<span class="fc" id="L45">    return size;</span>
+  }
+
+  /**
+   * getRecipient() - get the recipient of the package
+   * @return recipient - the recipient of the package
+   */
+  public Recipient getRecipient() {
+<span class="fc" id="L53">    return recipient;</span>
+  }
+
+  /**
+   * override the equal function
+   * @param o - the object of the function
+   * @return if they are equal, return true,
+   * else return false
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L64" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L65">      return true;</span>
+    }
+<span class="pc bpc" id="L67" title="1 of 2 branches missed.">    if (!(o instanceof Mail)) {</span>
+<span class="nc" id="L68">      return false;</span>
+    }
+<span class="fc" id="L70">    Mail mail = (Mail) o;</span>
+<span class="pc bpc" id="L71" title="1 of 4 branches missed.">    return size.equals(mail.size) &amp;&amp; recipient.equals(mail.recipient);</span>
+  }
+
+  /**
+   * override the hashCode function
+   * @return if they are equal, return true,
+   * else return false
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L81">    return Objects.hash(size, recipient);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

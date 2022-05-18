@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Owner.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assignment1</a> &gt; <a href="index.source.html" class="el_package">assignment1.problem1</a> &gt; <span class="el_source">Owner.java</span></div><h1>Owner.java</h1><pre class="source lang-java linenums">package assignment1.problem1;
+/**
+ * a vehicle typically has an owner. An owner has:
+● A first name, typically represented as a String.
+● A last name, also represented as a String.
+● A phone number, a String, consisting of ten characters1.
+*/
+public class Owner {
+  private String firstName;
+  private String lastName;
+  private String phoneNumber;
+<span class="fc" id="L12">  int PHONE_NUMBER_LENGTH = 10;</span>
+<span class="fc" id="L13">  String DEFAULT_NUMBER = &quot;-1&quot;;</span>
+
+  /**
+  * Constructor creates a new Owner object with specified
+  * firstName, lastName and phoneNumber
+  * @param firstName - firstName
+  * @param lastName - lastName
+  * @param phoneNumber - phoneNumber
+  * */
+<span class="fc" id="L22">  public Owner(String firstName, String lastName, String phoneNumber){</span>
+<span class="fc" id="L23">    this.firstName = firstName;</span>
+<span class="fc" id="L24">    this.lastName = lastName;</span>
+<span class="fc" id="L25">    this.phoneNumber = phoneNumber;</span>
+<span class="fc" id="L26">  }</span>
+
+  /**
+   * Returns the firstName.
+   * @return the firstName.
+   */
+  public String getFirstName() {
+<span class="fc" id="L33">    return this.firstName;</span>
+  }
+
+  /**
+   * Returns the lastName.
+   * @return the lastName.
+   */
+  public String getLastName() {
+<span class="fc" id="L41">    return this.lastName;</span>
+  }
+
+  /**
+   * Returns the phoneNumber.
+   * @return the phoneNumber.
+   */
+  public String getPhoneNumber() {
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">    if(phoneNumber.length() != PHONE_NUMBER_LENGTH) return &quot;Not a valid phone number&quot;;</span>
+<span class="fc" id="L50">    return this.phoneNumber;</span>
+  }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

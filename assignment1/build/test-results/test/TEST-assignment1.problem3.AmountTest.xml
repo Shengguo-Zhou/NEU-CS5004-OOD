@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="assignment1.problem3.AmountTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-02-14T19:47:14" hostname="shengguozhoudeMacBook-Air.local" time="0.003">
+  <properties/>
+  <testcase name="getDollar()" classname="assignment1.problem3.AmountTest" time="0.001"/>
+  <testcase name="testEquals()" classname="assignment1.problem3.AmountTest" time="0.002"/>
+  <testcase name="getCents()" classname="assignment1.problem3.AmountTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

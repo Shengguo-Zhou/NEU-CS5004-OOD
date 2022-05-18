@@ -1,0 +1,18 @@
+-classpath '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/build/classes/java/main:/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/build/resources/main'
+-d '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/build/docs/javadoc'
+-doctitle 'assignment3 1.0 API'
+-notimestamp 
+-quiet 
+-windowtitle 'assignment3 1.0 API'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Size.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Plumbing.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Specialist.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/arguementError.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Exterior.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Interior.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Painting.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Electrical.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/WindowCleaning.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Cleaning.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Service.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment3/src/main/java/problem1/Gardening.java'

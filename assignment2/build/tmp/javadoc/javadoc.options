@@ -1,0 +1,14 @@
+-classpath '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/build/classes/java/main:/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/build/resources/main'
+-d '/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/build/docs/javadoc'
+-doctitle 'assignment2 1.0 API'
+-notimestamp 
+-quiet 
+-windowtitle 'assignment2 1.0 API'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/src/main/java/problem1/Room.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/src/main/java/problem1/SingleRoom.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/src/main/java/problem1/DoubleRoom.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/src/main/java/problem1/FamilyRoom.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/src/main/java/problem2/Size.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/src/main/java/problem2/Mail.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/src/main/java/problem2/Locker.java'
+'/Users/shengguozhou/Desktop/cs5004/Student_shengguozhou/hw/assignment2/src/main/java/problem2/Recipient.java'

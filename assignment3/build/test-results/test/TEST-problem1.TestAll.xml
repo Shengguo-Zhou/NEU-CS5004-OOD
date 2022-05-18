@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="problem1.TestAll" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-03-01T00:57:15" hostname="shengguozhoudeMacBook-Air.local" time="0.053">
+  <properties/>
+  <testcase name="calculatePrice()" classname="problem1.TestAll" time="0.028"/>
+  <testcase name="isCarryout()" classname="problem1.TestAll" time="0.002"/>
+  <testcase name="getAddress()" classname="problem1.TestAll" time="0.002"/>
+  <testcase name="getSize()" classname="problem1.TestAll" time="0.002"/>
+  <testcase name="TestAll()" classname="problem1.TestAll" time="0.001"/>
+  <testcase name="getNumber()" classname="problem1.TestAll" time="0.001"/>
+  <testcase name="testHashCode()" classname="problem1.TestAll" time="0.002"/>
+  <testcase name="testEquals()" classname="problem1.TestAll" time="0.0"/>
+  <testcase name="testArgumentError()" classname="problem1.TestAll" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
